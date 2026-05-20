@@ -1,0 +1,24 @@
+# Ignore python caches and outputs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+*.db
+
+# Ignore git folder
+.git/
+.gitignore
+
+# Ignore local temporary or scratch assets
+scratch/
+uploads/*
+!uploads/.gitkeep
+
+# Ignore IDE settings
+.vscode/
+.idea/
+.gemini/

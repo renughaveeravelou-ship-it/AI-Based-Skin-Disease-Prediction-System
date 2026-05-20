@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0b0f19] text-slate-200 antialiased font-sans transition-colors duration-300;
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-slate-700 transition-colors;
+}
+
+/* Scanner neon grid animation */
+@keyframes scan-line {
+  0% { top: 0%; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+.scanner-line {
+  animation: scan-line 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Glassmorphism utility card styling */
+.glass-panel {
+  @apply bg-opacity-70 backdrop-blur-md bg-white border-slate-200 dark:bg-[#131926] dark:border-[#1f293d] rounded-2xl shadow-xl transition-all duration-300;
+}
+.glass-panel-hover {
+  @apply hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-2xl hover:shadow-indigo-500/5 hover:-translate-y-0.5;
+}
