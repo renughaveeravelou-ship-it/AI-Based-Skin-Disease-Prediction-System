@@ -20,7 +20,7 @@ This repository contains a Flask-based deep learning application for automated s
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Frontend
 - HTML
@@ -45,10 +45,12 @@ This repository contains a Flask-based deep learning application for automated s
 - Gemini API
 - OpenAI API
 
-Installation
-1️ Clone Repository
-git clone https://github.com/your-username/DermShield-AI.git
-cd DermShield-AI
+---
+
+##Installation
+###1️ Clone Repository
+-git clone https://github.com/your-username/DermShield-AI.git
+-cd DermShield-AI
 
 2️ Create Virtual Environment
 python -m venv venv
